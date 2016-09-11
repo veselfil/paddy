@@ -41,6 +41,7 @@ document.querySelector("#exit-button").addEventListener("click", () => {
 document.querySelector("#collapse-button").addEventListener("click", () => ipcRenderer.send("app-minimize"))
 document.querySelector("#save-button").addEventListener("click", () => ipcRenderer.send("save-document", textArea.innerText))
 document.querySelector("#load-button").addEventListener("click", () => ipcRenderer.send("load-document"))
+document.querySelector("#export-button").addEventListener("click", () => ipcRenderer.send("export-document", textArea.innerText))
 
 ipcRenderer.on("show-document", (event, data) => {
 	document.querySelector("#fake-textarea").innerText = data.docData

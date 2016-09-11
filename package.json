@@ -1,5 +1,8 @@
 {
   "name": "Paddy",
   "version": "0.1.0",
-  "main": "main.js"
+  "main": "main.js",
+  "description": "The paddy text editor",
+  "repository": "https://github.com/veselfil/paddy",
+  "license": "MIT License"
 }
