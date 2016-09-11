@@ -1,2 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
+node_modules
+Paddy-linux-ia32
+Paddy-linux-x64
+Paddy-win32-ia32
+Paddy-win32-x64
