@@ -1,0 +1,80 @@
+@import "https://fonts.googleapis.com/css?family=Prompt|Roboto+Mono:300,400";
+.draggable-bar {
+  -webkit-app-region: drag;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 100%; }
+  .draggable-bar .buttons {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    right: 12px;
+    top: 12px; }
+    .draggable-bar .buttons .button {
+      padding: 12px 0; }
+      .draggable-bar .buttons .button img {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        -webkit-filter: brightness(2); }
+        .draggable-bar .buttons .button img:hover {
+          -webkit-filter: brightness(0.5); }
+  .draggable-bar .top-menu {
+    padding: 12px; }
+    .draggable-bar .top-menu .menu-option {
+      -webkit-app-region: no-drag;
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px; }
+      .draggable-bar .top-menu .menu-option:hover {
+        color: #555555; }
+    .draggable-bar .top-menu .menu-option + .menu-option:before {
+      content: " | "; }
+
+html {
+  background: #2f3640;
+  font-family: "Prompt", sans-serif; }
+
+body {
+  margin-top: 96px;
+  height: 90%; }
+
+main {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%; }
+  main article {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%; }
+    main article #fake-textarea {
+      width: 100%;
+      max-width: 100%;
+      overflow-y: scroll;
+      height: 100%;
+      outline: none;
+      background: none;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 300;
+      color: white;
+      font-size: 18px; }
+
+::-webkit-scrollbar {
+  width: 12px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(102, 106, 118, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(65, 67, 75, 0.8); }
+
+/*# sourceMappingURL=style.css.map */
